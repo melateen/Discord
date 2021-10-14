@@ -1,0 +1,25 @@
+{
+  "name": "discord",
+  "version": "1.0.0",
+  "description": "Front end discord",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/melateen/Discord-Clone.git"
+  },
+  "keywords": [
+    "TST"
+  ],
+  "author": "Melateen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/melateen/Discord-Clone/issues"
+  },
+  "homepage": "https://github.com/melateen/Discord-Clone#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
+}

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0;
+    outline: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --discord-color: #6b77f1;
+    --background-theme:	#36393f;
+    --separators: #303339;
+    --server-list: #202225;
+    --channel-list: #2f3136;
+    --icons-theme: #b9bbbe;
+    --user-info:	#2a2c31;
+    --chat-box: #40444b;
+}
+
+/* ML - Members List */
+
+
+.container {
+    display: grid;
+    grid-template-columns: 71px 240px auto 240px;
+    grid-template-rows: 46px auto 52px;
+    grid-template-areas: 
+    "SL SI CI CI"                      
+    "SL CL MG ML"
+    "SL UI CB ML";
+    height: 100vh;
+    background-color: var(--background-theme);
+}
+
+.server-list {
+    grid-area: SL;
+    border: 1px solid var(--separators);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--server-list);
+}
+
+.chat-info {
+    grid-area: CI;
+    border: 2px solid var(--separators);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-theme);
+}
+
+.server-info {
+    grid-area: SI;
+    display: flex;
+    align-items: center;
+    background-color: var(--channel-list);
+}
+
+.channel-list {
+    grid-area: CL;
+    display: flex;
+    align-items: center;
+    background-color: var(--channel-list);
+}
+
+.user-info {
+    grid-area: UI;
+    display: flex;
+    align-items: center;
+    background-color: var(--user-info);
+}
+
+.messages-list {
+    grid-area: MG;
+    display: flex;
+    align-items: center;
+    background-color: var(--background-theme);
+}
+
+.chatbox-area {
+    margin: 10px;
+    grid-area: CB;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--chat-box);
+    border-radius: 5px;
+}
+
+    input[type="text"]{
+        width: 100%;
+        height: 100%;
+        background-color: var(--chat-box);
+        color: white;
+        margin: 10px;
+        border-radius: 25px;
+        font-weight: 400;
+    }
+
+.members-list {
+    grid-area: ML;
+    display: flex;
+    align-items: center;
+    background-color: var(--channel-list);
+}
